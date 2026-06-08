@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Ca sĩ Chi Dân bị truy tố về tội gì?",
+    "expected_answer": "Ca sĩ Chi Dân bị truy tố về tội tổ chức sử dụng trái phép chất ma túy.",
+    "expected_context": "Trong đó ca sĩ Chi Dân bị truy tố về tội tổ chức sử dụng trái phép chất ma túy. Sự việc diễn ra vào tháng 11 năm 2024 tại quận Tân Bình, TP.HCM."
+  },
+  {
+    "question": "Những nghệ sĩ nào bị truy tố cùng Chi Dân?",
+    "expected_answer": "Người mẫu An Tây (Andrea Aybar Carmona) và KOL Trúc Phương.",
+    "expected_context": "Viện Kiểm sát nhân dân TP.HCM đã hoàn tất cáo trạng truy tố bị can Nguyễn Trung Hiếu (tức ca sĩ Chi Dân, sinh năm 1989), bị can Andrea Aybar Carmona (tức người mẫu An Tây, sinh năm 1995) và bị can Nguyễn Đỗ Trúc Phương vì liên quan đến ma túy trong chuyên án mở rộng."
+  },
+  {
+    "question": "Nghệ sĩ Chi Dân, An Tây đã vi phạm luật gì?",
+    "expected_answer": "Các nghệ sĩ này đã vi phạm quy định của Bộ luật Hình sự về tội phạm ma túy và Luật Phòng, chống ma túy 2021.",
+    "expected_context": "Hành vi của các bị can đã vi phạm nghiêm trọng Bộ luật Hình sự năm 2015 (sửa đổi, bổ sung năm 2017) về tội tổ chức sử dụng và tàng trữ trái phép chất ma túy, đồng thời vi phạm các điều cấm trong Luật Phòng, chống ma túy 2021."
+  },
+  {
+    "question": "Các tội danh Châu Việt Cường đã vi phạm là gì?",
+    "expected_answer": "Châu Việt Cường đã vi phạm tội 'Giết người' và sử dụng trái phép chất ma túy.",
+    "expected_context": "Năm 2018, ca sĩ Châu Việt Cường trong cơn ngáo đá do sử dụng ma túy ketamine đã nhét tỏi vào miệng một cô gái trẻ khiến nạn nhân tử vong vì nghẹt thở. Tòa án sau đó đã tuyên phạt Châu Việt Cường mức án về tội danh Giết người."
+  },
+  {
+    "question": "Các loại chất cấm mà các nghệ sĩ hay sử dụng là gì?",
+    "expected_answer": "Các nghệ sĩ thường bị phát hiện sử dụng ma túy tổng hợp như Ketamine, thuốc lắc (MDMA), ma túy đá (Methamphetamine) và cần sa.",
+    "expected_context": "Theo thống kê từ các vụ án gần đây liên quan đến giới giải trí, tang vật thu giữ chủ yếu là các loại ma túy tổng hợp dạng tinh thể (thường gọi là hàng khay, ketamine), thuốc lắc (MDMA) và cần sa. Đây là các loại chất kích thích được sử dụng phổ biến trong các bữa tiệc kín."
+  },
+  {
+    "question": "Tại sao các nghệ sĩ hay dùng chất cấm?",
+    "expected_answer": "Theo lời khai của nhiều nghệ sĩ, họ tìm đến ma túy do áp lực công việc lớn, cần tìm cảm hứng sáng tác, hoặc do đua đòi theo bạn bè trong các cuộc vui.",
+    "expected_context": "Khi bị cơ quan chức năng bắt giữ, một số người nổi tiếng thường viện cớ rằng do áp lực công việc biểu diễn quá cao, thiếu ngủ kéo dài nên tìm đến ma túy để giải tỏa. Ngoài ra, một bộ phận khác cho rằng ma túy giúp tạo cảm hứng nghệ thuật, hoặc chỉ đơn giản là đua đòi, cả nể bạn bè trong các buổi tiệc tùng."
+  },
+  {
+    "question": "Thống kê có bao nhiêu vụ nghệ sĩ vi phạm luật chất cấm, ma túy trong năm 2026?",
+    "expected_answer": "Trong năm 2026, mặc dù chưa có báo cáo thống kê tổng hợp đầy đủ của cả năm, nhưng nổi bật nhất là việc các cơ quan chức năng tiếp tục khởi tố và mở rộng điều tra các đường dây ma túy liên quan đến giới giải trí.",
+    "expected_context": "Tính đến các báo cáo trong năm 2026, cơ quan cảnh sát điều tra đã bóc gỡ nhiều đường dây ma túy. Chưa có con số thống kê chính xác tuyệt đối số lượng nghệ sĩ vi phạm trong năm nay, nhưng các vụ việc điển hình vẫn đang trong quá trình xét xử và mở rộng."
+  },
+  {
+    "question": "Mai Thế Nhân là ai, làm mảng âm nhạc gì?",
+    "expected_answer": "Mai Thế Nhân là một người hoạt động trong lĩnh vực âm nhạc (chi tiết mảng âm nhạc cụ thể cần được bổ sung dựa trên dữ liệu crawl của nhóm).",
+    "expected_context": "Dữ liệu context về nhân vật Mai Thế Nhân và các hoạt động âm nhạc (ví dụ: ca sĩ, nhạc sĩ, nhà sản xuất âm nhạc) sẽ được trích xuất từ các bài báo liên quan đã thu thập trong data/landing/news/."
+  },
+  {
+    "question": "Sự khác biệt giữa tội 'Tàng trữ' và 'Tổ chức sử dụng' trái phép chất ma túy là gì? Mức phạt đối với nghệ sĩ có khác biệt không?",
+    "expected_answer": "Tội tàng trữ là hành vi cất giữ ma túy (để dùng hoặc mục đích khác không nhằm mua bán), trong khi tổ chức sử dụng là hành vi chuẩn bị ma túy, địa điểm, dụng cụ cho người khác dùng. Tội tổ chức sử dụng thường có khung hình phạt nặng hơn rất nhiều.",
+    "expected_context": "Theo Bộ luật Hình sự 2015 (sửa đổi 2017), tội Tàng trữ trái phép chất ma túy (Điều 249) có mức phạt nhẹ hơn so với tội Tổ chức sử dụng trái phép chất ma túy (Điều 255). Nhiều nghệ sĩ bị bắt quả tang đang phê pha thường bị khép vào tội tổ chức sử dụng do họ cung cấp địa điểm (căn hộ cao cấp) hoặc mua ma túy cho cả nhóm."
+  },
+  {
+    "question": "Nếu nghệ sĩ từng bị phạt hành chính vì dùng ma túy, sau đó tái phạm thì có bị xử lý hình sự không?",
+    "expected_answer": "Hành vi sử dụng trái phép chất ma túy đơn thuần chỉ bị xử phạt vi phạm hành chính, không bị truy cứu trách nhiệm hình sự dù tái phạm, trừ khi có hành vi tàng trữ hoặc tổ chức.",
+    "expected_context": "Căn cứ theo Luật Phòng, chống ma túy hiện hành, người có hành vi sử dụng trái phép chất ma túy sẽ bị phạt tiền và đưa vào diện quản lý, cai nghiện. Việc 'sử dụng' ma túy đã được phi hình sự hóa, do đó dù nghệ sĩ tái phạm việc sử dụng cũng không bị khởi tố hình sự mà áp dụng các biện pháp xử lý hành chính."
+  },
+  {
+    "question": "Nhiều ca sĩ sử dụng 'bóng cười' (khí N2O) trong quán bar. Tại sao họ chỉ bị phạt hành chính mà không bị truy tố hình sự?",
+    "expected_answer": "Vì khí N2O (bóng cười) không nằm trong danh mục các chất ma túy, mà chỉ là hóa chất hạn chế sản xuất, kinh doanh trong lĩnh vực công nghiệp.",
+    "expected_context": "Theo Nghị định của Chính phủ về danh mục chất ma túy và tiền chất, khí N2O không phải là ma túy. Do đó, việc người dân hoặc các nghệ sĩ hít bóng cười không cấu thành tội phạm ma túy. Tuy nhiên, hành vi mua bán sai mục đích sẽ bị xử phạt hành chính về vi phạm hóa chất."
+  },
+  {
+    "question": "Nghệ sĩ khai rằng vô tình uống nhầm ly nước có pha sẵn ma túy tại một buổi tiệc. Pháp luật quy định thế nào về trường hợp này?",
+    "expected_answer": "Nếu chứng minh được bản thân bị người khác lén lút bỏ ma túy vào nước uống mà không hề hay biết (vô ý sử dụng), người đó sẽ không bị xử phạt vi phạm hành chính về hành vi sử dụng ma túy.",
+    "expected_context": "Trong pháp luật, yếu tố lỗi (cố ý) là bắt buộc để xử phạt. Nếu cơ quan điều tra làm rõ được việc nghệ sĩ bị gài bẫy, lừa uống nước có pha ma túy (tức là không có lỗi cố ý), thì họ là nạn nhân và không phải chịu trách nhiệm pháp lý cho hành vi sử dụng."
+  },
+  {
+    "question": "Quản lý của nghệ sĩ biết rõ nghệ sĩ đang tổ chức sử dụng ma túy trong căn hộ nhưng không báo công an thì có phạm tội không?",
+    "expected_answer": "Có thể bị truy cứu trách nhiệm hình sự về tội 'Không tố giác tội phạm' hoặc 'Che giấu tội phạm' tùy thuộc vào mức độ và tính chất của vụ án.",
+    "expected_context": "Theo Bộ luật Hình sự, nếu một người biết rõ một tội phạm nghiêm trọng (như Tổ chức sử dụng ma túy quy mô lớn) đang hoặc đã xảy ra mà không trình báo cơ quan chức năng, người đó có thể bị khởi tố về tội Không tố giác tội phạm (Điều 390) hoặc Che giấu tội phạm nếu có hành vi xóa dấu vết."
+  },
+  {
+    "question": "Biệt thự sang trọng của nghệ sĩ dùng làm tụ điểm 'bay lắc' ma túy có bị Nhà nước tịch thu không?",
+    "expected_answer": "Có, nếu chứng minh được bất động sản đó được sử dụng làm công cụ, phương tiện phạm tội.",
+    "expected_context": "Theo quy định pháp luật hình sự về xử lý vật chứng, các công cụ, phương tiện dùng vào việc phạm tội có thể bị tịch thu sung quỹ Nhà nước. Nếu nghệ sĩ cố tình thiết kế căn hộ, biệt thự với hệ thống cách âm, đèn laser chuyên dụng để phục vụ riêng cho việc tổ chức sử dụng ma túy, căn nhà có thể bị xem xét tịch thu."
+  },
+  {
+    "question": "Người hâm mộ (fan) cung cấp ma túy cho thần tượng sử dụng sẽ đối mặt với tội danh gì?",
+    "expected_answer": "Người hâm mộ đó sẽ bị khởi tố về tội 'Mua bán trái phép chất ma túy' hoặc 'Cung cấp trái phép chất ma túy'.",
+    "expected_context": "Dù động cơ là tặng cho thần tượng mà không lấy tiền, hành vi chuyển giao ma túy cho người khác vẫn cấu thành tội Mua bán trái phép chất ma túy hoặc các tội danh liên quan đến việc phân phối, tàng trữ, vận chuyển ma túy theo Bộ luật Hình sự."
+  },
+  {
+    "question": "Một diễn viên Việt Nam sử dụng cần sa hợp pháp tại Canada, khi về nước có bị xử phạt không?",
+    "expected_answer": "Hành vi sử dụng ma túy ở nước ngoài (nơi được hợp pháp hóa) về cơ bản sẽ không bị truy cứu trách nhiệm tại Việt Nam nếu không vi phạm các điều kiện về tàng trữ, vận chuyển qua biên giới.",
+    "expected_context": "Luật pháp Việt Nam áp dụng nguyên tắc lãnh thổ. Nếu hành vi sử dụng diễn ra hoàn toàn ở Canada (nơi cần sa hợp pháp) và kết thúc trước khi về nước, thì không có căn cứ để xử phạt hành vi đó tại Việt Nam. Tuy nhiên, nếu mang cần sa về Việt Nam thì sẽ phạm tội vận chuyển, tàng trữ ma túy xuyên quốc gia."
+  },
+  {
+    "question": "Nghệ sĩ ngâm rễ cây cần sa hoặc cây anh túc vào bình rượu để uống bồi bổ sức khỏe tại nhà bị xử lý ra sao?",
+    "expected_answer": "Hành vi tàng trữ bình rượu ngâm cây anh túc, rễ cần sa là vi phạm pháp luật về phòng chống ma túy và có thể bị phạt hành chính hoặc khởi tố hình sự tùy khối lượng.",
+    "expected_context": "Cây anh túc (cây thuốc phiện) và cây cần sa thuộc danh mục thực vật có chứa chất ma túy cấm trồng và tàng trữ. Việc ngâm rượu để uống, dù với mục đích trị bệnh hay bồi bổ sức khỏe, vẫn bị coi là hành vi tàng trữ trái phép thực vật chứa chất ma túy và sẽ bị xử phạt nghiêm ngặt."
+  },
+  {
+    "question": "Rapper sáng tác và phát hành bài hát ca ngợi lối sống 'phê pha', sử dụng ma túy đá thì có vi phạm luật không?",
+    "expected_answer": "Có, hành vi này vi phạm các quy định về văn hóa, an ninh mạng và Luật Phòng, chống ma túy liên quan đến việc xúi giục, kích động người khác sử dụng ma túy.",
+    "expected_context": "Điều 5 Luật Phòng, chống ma túy 2021 nghiêm cấm các hành vi hướng dẫn, xúi giục, kích động người khác sử dụng trái phép chất ma túy. Việc phát hành các tác phẩm nghệ thuật cổ xúy, ca ngợi việc dùng ma túy không chỉ bị gỡ bỏ, phạt hành chính trong lĩnh vực văn hóa mà còn có thể bị xem xét trách nhiệm hình sự nếu gây hậu quả xấu cho xã hội."
+  },
+  {
+    "question": "Hình phạt cho tội tàng trữ trái phép chất ma tuý theo Điều 249 Bộ luật Hình sự?",
+    "expected_answer": "Phạt tù từ 1 đến 5 năm đối với trường hợp tàng trữ từ 1g đến dưới 5g heroin hoặc cocaine, hoặc chất ma tuý khác với khối lượng tương đương.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 249"
+  },
+  {
+    "question": "Luật Phòng chống ma tuý 2021 quy định những hình thức cai nghiện nào?",
+    "expected_answer": "Cai nghiện tự nguyện tại gia đình, cai nghiện tự nguyện tại cộng đồng, cai nghiện tự nguyện tại cơ sở cai nghiện, và cai nghiện bắt buộc tại cơ sở cai nghiện.",
+    "expected_context": "Luật Phòng chống ma tuý 2021, Chương V"
+  },
+  {
+    "question": "Danh mục các chất ma tuý thuộc nhóm I theo quy định pháp luật Việt Nam gồm những chất nào?",
+    "expected_answer": "Nhóm I gồm các chất ma tuý tuyệt đối cấm sử dụng trong y học và đời sống, bao gồm heroin, cocaine, methamphetamine, MDMA (ecstasy), cannabis (cần sa), và các chất tương tự.",
+    "expected_context": "Nghị định 57/2022/NĐ-CP, Phụ lục I"
+  },
+  {
+    "question": "Ca sĩ Chi Dân bị truy tố về tội danh gì và vụ việc xảy ra khi nào, ở đâu?",
+    "expected_answer": "Ca sĩ Chi Dân (tên thật là Nguyễn Trung Hiếu) bị truy tố về tội tổ chức sử dụng trái phép chất ma túy. Sự việc xảy ra vào tháng 11 năm 2024 tại quận Tân Bình, TP.HCM.",
+    "expected_context": "Truy tố ca sĩ Chi Dân, người mẫu An Tây, KOL Trúc Phương vì ma túy (article_01.json)"
+  },
+  {
+    "question": "Diễn viên Hữu Tín bị lực lượng chức năng bắt giữ vào ngày nào và tại đâu?",
+    "expected_answer": "Diễn viên hài Hữu Tín bị lực lượng Công an quận 8, TP.HCM bắt giữ vào ngày 12/6/2022 khi đang tổ chức sử dụng ma túy tại một căn hộ chung cư.",
+    "expected_context": "Diễn viên Hữu Tín bị bắt vì dùng ma túy tại chung cư (article_03.json)"
+  },
+  {
+    "question": "Ca sĩ Châu Việt Cường phạm tội gì và bị kết án bao nhiêu năm tù?",
+    "expected_answer": "Ca sĩ Châu Việt Cường (Nguyễn Việt Cường) bị tuyên phạt 13 năm tù về tội 'Giết người' vì ảo giác ma túy nhét tỏi vào miệng nạn nhân gây tử vong.",
+    "expected_context": "Tuyên phạt ca sĩ Châu Việt Cường 13 năm tù vì ảo giác ma túy nhét tỏi vào miệng nạn nhân (article_06.json)"
+  },
+  {
+    "question": "Ca sĩ Long Nhật bị bắt giữ vì hành vi gì và tại đâu?",
+    "expected_answer": "Ca sĩ Long Nhật bị khởi tố, bắt tạm giam vì tội 'Tổ chức sử dụng trái phép chất ma túy' tại căn hộ riêng ở phường Tân Tạo, quận Bình Tân, TP.HCM.",
+    "expected_context": "Khởi tố ca sĩ Long Nhật về tội tổ chức sử dụng trái phép chất ma túy (article_08.json)"
+  },
+  {
+    "question": "Hình phạt cơ bản đối với tội mua bán trái phép chất ma túy được quy định như thế nào ở Khoản 1 Điều 251 Bộ luật Hình sự?",
+    "expected_answer": "Người nào mua bán trái phép chất ma túy, thì bị phạt tù từ 03 năm đến 07 năm.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 251"
+  },
+  {
+    "question": "Khung hình phạt cơ bản cho người phạm tội tổ chức sử dụng trái phép chất ma túy theo Khoản 1 Điều 255 Bộ luật Hình sự là gì?",
+    "expected_answer": "Người nào tổ chức sử dụng trái phép chất ma túy dưới bất kỳ hình thức nào, thì bị phạt tù từ 03 năm đến 07 năm.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 255"
+  },
+  {
+    "question": "Tội chứa chấp việc sử dụng trái phép chất ma túy theo Khoản 1 Điều 256 Bộ luật Hình sự bị xử phạt như thế nào?",
+    "expected_answer": "Người nào cho thuê, cho mượn địa điểm hoặc có bất kỳ hành vi nào khác chứa chấp việc sử dụng trái phép chất ma túy (nếu không thuộc trường hợp tổ chức sử dụng), thì bị phạt tù từ 02 năm đến 07 năm.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 256"
+  },
+  {
+    "question": "Người sử dụng trái phép chất ma túy bị truy cứu trách nhiệm hình sự phạt tù từ 2 đến 3 năm trong những trường hợp nào theo Điều 256a Bộ luật Hình sự?",
+    "expected_answer": "Bị phạt tù từ 02 năm đến 03 năm nếu đang trong thời hạn cai nghiện ma túy, đang điều trị nghiện bằng thuốc thay thế, đang trong thời hạn quản lý sau cai nghiện hoặc trong thời hạn quản lý người sử dụng trái phép chất ma túy.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 256a"
+  },
+  {
+    "question": "Hình phạt đối với tội cưỡng bức người khác sử dụng trái phép chất ma túy theo Khoản 1 Điều 257 Bộ luật Hình sự là gì?",
+    "expected_answer": "Người nào dùng vũ lực, đe dọa dùng vũ lực hoặc dùng thủ đoạn khác uy hiếp tinh thần của người khác để buộc họ phải sử dụng trái phép chất ma túy trái với ý muốn của họ, thì bị phạt tù từ 02 năm đến 07 năm.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 257"
+  },
+  {
+    "question": "Tội lôi kéo người khác sử dụng trái phép chất ma túy theo Khoản 1 Điều 258 Bộ luật Hình sự có mức phạt tù như thế nào?",
+    "expected_answer": "Người nào rủ rê, dụ dỗ, xúi giục hoặc bằng các thủ đoạn khác nhằm lôi kéo người khác sử dụng trái phép chất ma túy, thì bị phạt tù từ 01 năm đến 05 năm.",
+    "expected_context": "Bộ luật Hình sự 2015, Điều 258"
+  },
+  {
+    "question": "Ca sĩ Chu Bin bị tạm giữ hình sự về hành vi gì và thời gian, địa điểm xảy ra vụ việc?",
+    "expected_answer": "Ngày 14/6/2024, ca sĩ Chu Bin (tên thật là Chu Đăng Thanh) bị Công an quận 10, TP.HCM tạm giữ hình sự để điều tra về hành vi tổ chức sử dụng trái phép chất ma túy tại một địa điểm bay lắc ở quận 10.",
+    "expected_context": "Ca sĩ Chu Bin bị bắt quả tang vì tổ chức sử dụng ma túy (article_04.json)"
+  },
+  {
+    "question": "Cựu diễn viên Lệ Hằng (phim 'Xin hãy tin em') bị bắt vì tội danh gì và do cơ quan nào thực hiện?",
+    "expected_answer": "Tháng 3/2023, cựu diễn viên Bùi Thị Lệ Hằng bị Công an quận Đống Đa, Hà Nội bắt quả tang khi đang thực hiện hành vi mua bán trái phép chất ma túy tổng hợp.",
+    "expected_context": "Diễn viên Lệ Hằng phim 'Xin hãy tin em' bị bắt vì mua bán ma túy (article_05.json)"
+  }
+]
