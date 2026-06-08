@@ -11,7 +11,7 @@ Báo cáo này cung cấp hướng dẫn triển khai từng bước cho **10 nh
     ```bash
     pip install -r requirements.txt
     ```
-    *(Các thư viện chính bao gồm: `crawl4ai`, `markitdown`, `langchain-text-splitters`, `sentence-transformers`, `weaviate-client` hoặc `chromadb`, `rank-bm25`, `pageindex`, `openai`, `deepeval` / `ragas`).*
+    *(Các thư viện chính bao gồm: `crawl4ai`, `markitdown`, `langchain-text-splitters`, `sentence-transformers`, `chromadb`, `rank-bm25`, `pageindex`, `openai`, `deepeval` / `ragas`).*
 
 2.  **Cấu hình API Keys:**
     Sao chép file `.env.example` thành `.env`:
@@ -20,12 +20,11 @@ Báo cáo này cung cấp hướng dẫn triển khai từng bước cho **10 nh
     ```
     Mở file `.env` và cập nhật các khóa cần thiết:
     ```env
-    OPENAI_API_KEY=your_openai_key
-    GEMINI_API_KEY=your_gemini_key
+    OPENAI_API_KEY=your_openrouter_or_openai_key
+    OPENAI_API_BASE=https://openrouter.ai/api/v1
+    LLM_MODEL=google/gemini-2.5-flash
     JINA_API_KEY=your_jina_reranker_key
     PAGEINDEX_API_KEY=your_pageindex_key
-    WEAVIATE_URL=your_weaviate_cluster_url
-    WEAVIATE_API_KEY=your_weaviate_api_key
     ```
 
 ---
@@ -103,8 +102,8 @@ Báo cáo này cung cấp hướng dẫn triển khai từng bước cho **10 nh
     1.  Cấu hình kích thước chunk mong muốn (`CHUNK_SIZE`, `CHUNK_OVERLAP`) và giải thích lý do chọn trong ghi chú code.
     2.  Triển khai hàm `load_documents()` để đọc tất cả các file markdown đã được chuẩn hóa.
     3.  Triển khai hàm `chunk_documents(documents)` sử dụng `RecursiveCharacterTextSplitter`.
-    4.  Triển khai hàm `embed_chunks(chunks)` sử dụng mô hình embedding (ví dụ: `BAAI/bge-m3` thông qua thư viện `sentence-transformers`).
-    5.  Triển khai hàm `index_to_vectorstore(chunks)` để lưu các vector và metadata vào Vector DB (khuyên dùng Weaviate hoặc ChromaDB).
+    4.  Triển khai hàm `embed_chunks(chunks)` sử dụng mô hình embedding (chúng ta dùng `all-MiniLM-L6-v2` tích hợp sẵn trong ChromaDB thông qua `SentenceTransformerEmbeddingFunction`).
+    5.  Triển khai hàm `index_to_vectorstore(chunks)` để lưu các vector và metadata vào Vector DB (chúng ta sử dụng ChromaDB).
 *   **Gợi ý mã nguồn triển khai:**
     ```python
     def load_documents() -> list[dict]:
@@ -206,7 +205,7 @@ Báo cáo này cung cấp hướng dẫn triển khai từng bước cho **10 nh
 *   **Việc cần làm:**
     1.  Triển khai hàm `reorder_for_llm(chunks)`: Sắp xếp lại danh sách tài liệu theo mô hình hình chuông (đưa các tài liệu có điểm số cao nhất ra hai biên: đầu và cuối danh sách, và đẩy tài liệu ít liên quan nhất vào giữa) nhằm khắc phục điểm yếu trí nhớ ngữ cảnh (*Lost in the Middle*) của LLM.
     2.  Triển khai hàm `format_context(chunks)`: Định dạng danh sách tài liệu thành chuỗi văn bản kèm theo ký hiệu nguồn cụ thể (ví dụ: `[Document 1 | Source: luat-phong-chong-ma-tuy.pdf]`).
-    3.  Triển khai hàm `generate_with_citation(query)`: Thực hiện toàn bộ luồng RAG từ tìm kiếm tài liệu -> sắp xếp lại -> tạo prompt gửi lên LLM (OpenAI/Gemini) -> lấy câu trả lời kèm trích dẫn nguồn định dạng `[Nguồn, Năm]`.
+    3.  Triển khai hàm `generate_with_citation(query)`: Thực hiện toàn bộ luồng RAG từ tìm kiếm tài liệu -> sắp xếp lại -> tạo prompt gửi lên LLM (chúng ta dùng `google/gemini-2.5-flash` qua OpenRouter) -> lấy câu trả lời kèm trích dẫn nguồn định dạng `[Nguồn, Năm]`.
 *   **Yêu cầu an toàn chống ảo giác:** Nếu thông tin trong ngữ cảnh không đủ để trả lời câu hỏi, LLM buộc phải trả về câu trả lời mặc định: `"Tôi không thể xác minh thông tin này từ nguồn hiện có"`.
 
 ---
