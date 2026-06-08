@@ -1,0 +1,14 @@
+# Khởi tố, bắt tạm giam ca sĩ Sơn Ngọc Minh vì liên quan đến ma túy
+
+**Source:** https://vietnamnet.vn/ca-si-son-ngoc-minh-bi-khoi-to-tam-giam-vi-ma-tuy-202605.html
+**Crawled:** 2026-06-08T15:26:00.000000
+
+---
+
+# Khởi tố, bắt tạm giam ca sĩ Sơn Ngọc Minh vì liên quan đến ma túy
+
+Nằm trong hoạt động mở rộng điều tra chuyên án ma túy của Công an TP.HCM vào tháng 5/2026, ca sĩ Sơn Ngọc Minh (cựu thành viên nhóm nhạc nam V.Music) đã bị cơ quan chức năng khởi tố và bắt tạm giam về hành vi "Tổ chức sử dụng trái phép chất ma túy".
+
+Cơ quan điều tra xác định Sơn Ngọc Minh có vai trò đồng phạm cùng ca sĩ Long Nhật và một số đối tượng khác trong việc cung cấp địa điểm, chuẩn bị công cụ và ma túy đá để tổ chức bay lắc, sử dụng chất cấm nhiều lần. Vụ việc bắt giữ Sơn Ngọc Minh khiến cộng đồng mạng bất ngờ, do cựu ca sĩ này từng hoạt động tích cực trong nhóm nhạc V.Music trước khi chuyển sang làm nghệ sĩ tự do và KOL trực tuyến.
+
+Công an TP.HCM đang tiếp tục mở rộng chuyên án để làm rõ nguồn cung cấp ma túy cho nhóm nghệ sĩ này và xử lý các đối tượng trung gian giao nhận.

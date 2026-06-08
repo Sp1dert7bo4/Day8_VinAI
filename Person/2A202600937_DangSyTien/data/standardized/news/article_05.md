@@ -1,0 +1,10 @@
+# Diễn viên Lệ Hằng phim 'Xin hãy tin em' bị bắt vì mua bán ma túy
+
+**Source:** https://vnexpress.net/dien-vien-le-hang-phim-xin-hay-tin-em-bi-bat-vi-mua-ban-ma-tuy-4591423.html
+**Crawled:** 2026-06-08T13:46:00.317555
+
+---
+
+# Diễn viên Lệ Hằng phim 'Xin hãy tin em' bị bắt vì mua bán ma túy
+
+Tháng 3/2023, cựu diễn viên Bùi Thị Lệ Hằng (sinh năm 1975, người thủ vai Hoài 'Thatcher' trong bộ phim nổi tiếng 'Xin hãy tin em') đã bị cơ quan công an quận Đống Đa, Hà Nội bắt quả tang khi đang thực hiện hành vi mua bán trái phép chất ma túy. Cơ quan công an thu giữ số lượng ma túy tổng hợp mà cựu diễn viên này đang mang đi bán lẻ.
