@@ -1,0 +1,96 @@
+{
+  "A_hybrid_with_rerank": [
+    {
+      "config": "A_hybrid_with_rerank",
+      "question": "Luật Phòng, chống ma túy quy định gì về cai nghiện ma túy?",
+      "retrieved_count": 5,
+      "top_source": "luat_phong_chong_ma_tuy.md",
+      "answer": "4  CÔNG BÁO/Số 567 + 568/Ngày 30-4-2021  QUỐC HỘI  Luật số: 73/2021/QH14  CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc  LUẬT PHÒNG, CHỐNG MA TÚY  Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;  Quốc hội ban hành [luat_phong_chong_ma_tuy.md] # Luật Phòng, chống ma túy năm 2021 (Luật số 73/2021/QH15) (luat_phong_chong_ma_tuy_2021.pdf)  Luật Phòng, chống ma túy được Quốc hội ban hành quy định về phòng, chống ma túy; cai nghiện ma túy; quản lý người sử dụng trái phép chất ma túy;  [luat_phong_chong_ma_tuy_2021.md] # Ngày 8 — RAG Pipeline v2  **Chương 2 | Ngày 8 trong 15**  ---  ## Mục Tiêu  Xây dựng một RAG pipeline thực tế, end-to-end, từ thu thập dữ liệu pháp luật và báo chí về ma tuý → xử lý → indexing → retrieval (hybrid + vectorless fallback) →  [README.md]",
+      "scores": {
+        "faithfulness": 0.9888888888888889,
+        "answer_relevance": 0.9090909090909091,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.9744949494949495
+      },
+      "error": ""
+    },
+    {
+      "config": "A_hybrid_with_rerank",
+      "question": "Danh mục chất ma túy và tiền chất dùng để làm gì?",
+      "retrieved_count": 5,
+      "top_source": "danh_muc_chat_ma_tuy.md",
+      "answer": "# Danh mục các chất ma túy và tiền chất (danh_muc_chat_ma_tuy.pdf)  Đây là văn bản pháp luật quy định chi tiết danh mục các chất ma túy và tiền chất cấm sử dụng tại Việt Nam theo các Nghị định mới nhất. Danh mục bao gồm: - Nhóm I: Các chất  [danh_muc_chat_ma_tuy.md] 4  CÔNG BÁO/Số 567 + 568/Ngày 30-4-2021  QUỐC HỘI  Luật số: 73/2021/QH14  CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc  LUẬT PHÒNG, CHỐNG MA TÚY  Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;  Quốc hội ban hành [luat_phong_chong_ma_tuy.md] # Rapper Bình Gold bị khởi tố bắt tạm giam vì cướp tài sản và ma túy  **Source:** https://laodong.vn/rapper-binh-gold-bi-khoi-to-bat-tam-giam-vi-cuop-tai-san-va-ma-tuy-202507.html **Crawled:** 2026-06-08T15:26:00.000000  ---  # Rapper Bình  [article_10.md]",
+      "scores": {
+        "faithfulness": 0.9719626168224299,
+        "answer_relevance": 0.6363636363636364,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.9020815632965166
+      },
+      "error": ""
+    },
+    {
+      "config": "A_hybrid_with_rerank",
+      "question": "Pipeline có trả về nguồn tài liệu để citation không?",
+      "retrieved_count": 5,
+      "top_source": "README.md",
+      "answer": "# Ngày 8 — RAG Pipeline v2  **Chương 2 | Ngày 8 trong 15**  ---  ## Mục Tiêu  Xây dựng một RAG pipeline thực tế, end-to-end, từ thu thập dữ liệu pháp luật và báo chí về ma tuý → xử lý → indexing → retrieval (hybrid + vectorless fallback) →  [README.md] # Khởi tố, bắt tạm giam ca sĩ Sơn Ngọc Minh vì liên quan đến ma túy  **Source:** https://vietnamnet.vn/ca-si-son-ngoc-minh-bi-khoi-to-tam-giam-vi-ma-tuy-202605.html **Crawled:** 2026-06-08T15:26:00.000000  ---  # Khởi tố, bắt tạm giam ca sĩ [article_09.md] # Rapper Bình Gold bị khởi tố bắt tạm giam vì cướp tài sản và ma túy  **Source:** https://laodong.vn/rapper-binh-gold-bi-khoi-to-bat-tam-giam-vi-cuop-tai-san-va-ma-tuy-202507.html **Crawled:** 2026-06-08T15:26:00.000000  ---  # Rapper Bình  [article_10.md]",
+      "scores": {
+        "faithfulness": 0.978494623655914,
+        "answer_relevance": 0.4,
+        "context_recall": 0.6666666666666666,
+        "context_precision": 1.0,
+        "average": 0.7612903225806451
+      },
+      "error": ""
+    }
+  ],
+  "B_hybrid_without_rerank": [
+    {
+      "config": "B_hybrid_without_rerank",
+      "question": "Luật Phòng, chống ma túy quy định gì về cai nghiện ma túy?",
+      "retrieved_count": 5,
+      "top_source": "luat_phong_chong_ma_tuy.md",
+      "answer": "4  CÔNG BÁO/Số 567 + 568/Ngày 30-4-2021  QUỐC HỘI  Luật số: 73/2021/QH14  CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc  LUẬT PHÒNG, CHỐNG MA TÚY  Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;  Quốc hội ban hành [luat_phong_chong_ma_tuy.md] # Luật Phòng, chống ma túy năm 2021 (Luật số 73/2021/QH15) (luat_phong_chong_ma_tuy_2021.pdf)  Luật Phòng, chống ma túy được Quốc hội ban hành quy định về phòng, chống ma túy; cai nghiện ma túy; quản lý người sử dụng trái phép chất ma túy;  [luat_phong_chong_ma_tuy_2021.md] # Ngày 8 — RAG Pipeline v2  **Chương 2 | Ngày 8 trong 15**  ---  ## Mục Tiêu  Xây dựng một RAG pipeline thực tế, end-to-end, từ thu thập dữ liệu pháp luật và báo chí về ma tuý → xử lý → indexing → retrieval (hybrid + vectorless fallback) →  [README.md]",
+      "scores": {
+        "faithfulness": 0.9888888888888889,
+        "answer_relevance": 0.9090909090909091,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.9744949494949495
+      },
+      "error": ""
+    },
+    {
+      "config": "B_hybrid_without_rerank",
+      "question": "Danh mục chất ma túy và tiền chất dùng để làm gì?",
+      "retrieved_count": 5,
+      "top_source": "danh_muc_chat_ma_tuy.md",
+      "answer": "# Danh mục các chất ma túy và tiền chất (danh_muc_chat_ma_tuy.pdf)  Đây là văn bản pháp luật quy định chi tiết danh mục các chất ma túy và tiền chất cấm sử dụng tại Việt Nam theo các Nghị định mới nhất. Danh mục bao gồm: - Nhóm I: Các chất  [danh_muc_chat_ma_tuy.md] 4  CÔNG BÁO/Số 567 + 568/Ngày 30-4-2021  QUỐC HỘI  Luật số: 73/2021/QH14  CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc  LUẬT PHÒNG, CHỐNG MA TÚY  Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;  Quốc hội ban hành [luat_phong_chong_ma_tuy.md] # Rapper Bình Gold bị khởi tố bắt tạm giam vì cướp tài sản và ma túy  **Source:** https://laodong.vn/rapper-binh-gold-bi-khoi-to-bat-tam-giam-vi-cuop-tai-san-va-ma-tuy-202507.html **Crawled:** 2026-06-08T15:26:00.000000  ---  # Rapper Bình  [article_10.md]",
+      "scores": {
+        "faithfulness": 0.9719626168224299,
+        "answer_relevance": 0.6363636363636364,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "average": 0.9020815632965166
+      },
+      "error": ""
+    },
+    {
+      "config": "B_hybrid_without_rerank",
+      "question": "Pipeline có trả về nguồn tài liệu để citation không?",
+      "retrieved_count": 5,
+      "top_source": "README.md",
+      "answer": "# Ngày 8 — RAG Pipeline v2  **Chương 2 | Ngày 8 trong 15**  ---  ## Mục Tiêu  Xây dựng một RAG pipeline thực tế, end-to-end, từ thu thập dữ liệu pháp luật và báo chí về ma tuý → xử lý → indexing → retrieval (hybrid + vectorless fallback) →  [README.md] # Khởi tố, bắt tạm giam ca sĩ Sơn Ngọc Minh vì liên quan đến ma túy  **Source:** https://vietnamnet.vn/ca-si-son-ngoc-minh-bi-khoi-to-tam-giam-vi-ma-tuy-202605.html **Crawled:** 2026-06-08T15:26:00.000000  ---  # Khởi tố, bắt tạm giam ca sĩ [article_09.md] # Rapper Bình Gold bị khởi tố bắt tạm giam vì cướp tài sản và ma túy  **Source:** https://laodong.vn/rapper-binh-gold-bi-khoi-to-bat-tam-giam-vi-cuop-tai-san-va-ma-tuy-202507.html **Crawled:** 2026-06-08T15:26:00.000000  ---  # Rapper Bình  [article_10.md]",
+      "scores": {
+        "faithfulness": 0.978494623655914,
+        "answer_relevance": 0.4,
+        "context_recall": 0.6666666666666666,
+        "context_precision": 1.0,
+        "average": 0.7612903225806451
+      },
+      "error": ""
+    }
+  ]
+}
