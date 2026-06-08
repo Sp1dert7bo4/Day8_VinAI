@@ -517,20 +517,63 @@ run_dashboard()
 
 ### Kiến Trúc Hệ Thống
 
-```
-[Vẽ diagram kiến trúc ở đây]
+```mermaid
+flowchart TD
+    %% Định nghĩa các Style
+    classDef ui fill:#4F46E5,stroke:#3730A3,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+    classDef data fill:#059669,stroke:#047857,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+    classDef process fill:#D97706,stroke:#B45309,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+    classDef retrieval fill:#2563EB,stroke:#1D4ED8,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+    classDef storage fill:#475569,stroke:#334155,stroke-width:2px,color:#fff,rx:8px,ry:8px;
+
+    %% Khối Giao diện
+    User([Người dùng]) --> |Nhập câu hỏi| UI[Giao diện Chatbot Streamlit]
+    UI:::ui --> |Lưu & Lấy| Memory[(Conversation Memory)]:::storage
+    UI --> |Truy vấn + Lịch sử| RAG_Engine(RAG Engine)
+
+    %% Khối Data Ingestion
+    subgraph Ingestion [Data Ingestion Pipeline]
+        RawData[(Raw Data: PDF, HTML, DOCX)]:::data --> MarkItDown[Convert Markdown]:::process
+        MarkItDown --> Chunking[Chunking & Cleaning]:::process
+        Chunking --> Indexing[Embedding: BAAI/bge-m3\nTokenize: underthesea]:::process
+        Indexing --> VectorDB[(Vector DB & BM25)]:::storage
+    end
+
+    %% Khối Retrieval
+    subgraph Retrieval [Hybrid Retrieval Pipeline]
+        Query[Xử lý truy vấn]:::process --> SemSearch[Semantic Search]:::retrieval
+        Query --> LexSearch[Lexical Search BM25]:::retrieval
+        SemSearch --> Merge[Merge bằng RRF]:::process
+        LexSearch --> Merge
+        Merge --> Reranker[Jina Reranker]:::retrieval
+        Reranker --> Fallback{Score đủ tốt?}
+        Fallback --> |Không| PageIndex[Fallback: PageIndex Vectorless]:::retrieval
+        Fallback --> |Có| TopK[Lấy Top K Tài Liệu]
+        PageIndex --> TopK
+    end
+
+    %% Khối Generation
+    subgraph Generation [Generation Pipeline]
+        TopK --> Reorder[Sắp xếp lại context\nTránh Lost in the Middle]:::process
+        Reorder --> Prompt[Tạo Prompt kèm Citation]:::process
+        Prompt --> LLM[LLM Generation\ngpt-4o-mini / gemini]:::retrieval
+    end
+
+    %% Kết nối luồng chính
+    RAG_Engine --> Retrieval
+    Retrieval --> Generation
+    Generation --> |Kết quả + Nguồn| UI
 ```
 
 ---
 
 ### Phân Công Công Việc
-
-| Thành viên | MSSV | Nhiệm vụ | Trạng thái |
-|-----------|------|----------|------------|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| Vai trò | Thành viên | MSSV | Nhiệm vụ chi tiết | Sản phẩm bàn giao |
+|---------|-----------|------|-------------------|-------------------|
+| **RAG Engine Integrator** (Trưởng nhóm) | Đặng Sỹ Tiến | 2A202600937 | Tích hợp code cá nhân làm RAG Engine chung. Cải tiến RAG: Đổi embedding tiếng Việt (`BAAI/bge-m3`), cấu hình `underthesea` cho BM25. Khắc phục lỗi API (giới hạn `max_tokens=1024` OpenRouter, fix lỗi key Jina 403). Vẽ sơ đồ kiến trúc và tài liệu hóa. | Thư mục `src/` chung, sơ đồ kiến trúc RAG. |
+| **Chatbot UI Developer** | Trần Nhất Huy | 2A202600731 | Xây dựng giao diện Chatbot tương tác thời gian thực bằng Streamlit. Triển khai Conversation Memory. Thiết kế giao diện hiển thị câu trả lời kèm citation trực quan và danh sách tài liệu nguồn. Tích hợp giao diện với RAG Engine. | File ứng dụng giao diện `app.py`. |
+| **Evaluation & QA Engineer** | Nguyễn Minh Anh | 2A202600905 | Biên soạn Golden Dataset (15+ cặp Q&A). Triển khai script đánh giá tự động bằng DeepEval. Đo lường hệ thống trên 4 chỉ số: Faithfulness, Answer Relevancy, Context Recall, Context Precision. | `golden_dataset.json` và `eval_pipeline.py`. |
+| **DevOps & A/B Analyst** | Nguyễn Trung Dân | 2A202601012 | Chạy thử nghiệm A/B trên 2 cấu hình (Có Reranker vs Không Reranker). Phân tích Worst Performers. Quản lý `requirements.txt`, viết `notebooks/demo.ipynb`, chuẩn bị slide/kịch bản demo, deploy lên cloud. | Báo cáo `result.md`, file môi trường, Demo Notebook. |
 
 ---
 
